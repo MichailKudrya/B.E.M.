@@ -1,13 +1,28 @@
 * {
     box-sizing: border-box;
-}html, body {
+}
+
+html,
+body {
     height: 100%;
 }
+
 body {
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
     background: #E5E5E5;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2B2B2B;
+}
+
 .container {
     max-width: 1440px;
     width: 100%;
@@ -16,33 +31,133 @@ body {
     background: #EBEBEB;
 }
 
-.main-screen 
+
+.main-screen {
+    height: 100vh;
+}
 
 .main-screen__header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 34px 140px 0 140px;
 }
 
 .main-screen__logo {
     width: 80px;
     height: 80px;
-    background: #C4C4C4;
+    background: #c4c4c4;
 }
 
-.main-screen__nav 
+.main-screen__nav .main-screen__ul {
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 
-.main-screen__ul 
+}
 
-.main-screen__li 
+.main-screen__li {
+    list-style: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
 
-.nav__a 
+}
 
-.main-screen__btn 
 
-.main-screen__a 
+.main-screen__btn {
+    display: inline-block;
+    padding: 11px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: #423F3E;
 
-.a 
+}
 
-.main-screen__title 
+.main-screen__a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
 
-.main-screen__desc 
+
+
+.main-screen__title {
+    font-weight: 700;
+    max-width: 960px;
+    margin-top: 229px;
+    margin-inline: auto;
+    font-size: 64px;
+    line-height: 120%;
+    text-align: center;
+    color: #2B2B2B;
+}
+
+.main-screen__desc {
+    font-weight: 700;
+    max-width: 960px;
+    margin-inline: auto;
+    margin-top: 31px;
+    margin-bottom: 300px;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #2B2B2B;
+
+}
+
+.block {
+    display: flex;
+    gap: 68px;
+    margin-top: 30px;
+    padding: 0px 120px;
+    margin-bottom: 100px;
+}
+
+.info {
+    flex: 0 1 65%;
+    margin-top: 94px;
+}
+
+.info__header {
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 120%;
+    color: #2B2B2B;
+    margin-bottom: 60px;
+}
+
+.info__body {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.info__item 
+.item {}
+
+.item__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2B2B2B;
+    margin-bottom: 20px;
+}
+
+.item__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2B2B2B;
+}
+
+.image {
+    flex: 0 1 35%;
+}
+
+.image__photo
