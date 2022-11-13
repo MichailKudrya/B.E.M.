@@ -23,6 +23,10 @@ a {
     color: #2B2B2B;
 }
 
+h4 {
+    margin: 0;
+}
+
 .container {
     max-width: 1440px;
     width: 100%;
@@ -159,13 +163,18 @@ a {
     flex: 0 1 35%;
 }
 
-.image__photo 
+.image__photo {
+    max-width: 534px;
+    height: 100%;
+}
 
-.description {}
+.description {
+    margin-bottom: 80px;
+}
 
 .description__abilities {
     display: flex;
-    justify-content: center;
+    margin-inline: 118px;
     gap: 220px;
     margin-bottom: 165px;
 }
@@ -216,21 +225,123 @@ a {
 .description__where {
     display: grid;
     grid-template-columns: 360px auto;
-   justify-content: center;
+    margin-inline: 118px;
 }
 
-.description__block-where 
+.description__block-where {
+    max-width: 272px;
+}
 
-.desc__title-where 
+.desc__title-where {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: #2B2B2B;
+    margin-bottom: 20px;
+}
 
-.desc__desc-where 
+.desc__desc-where {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2B2B2B;
+}
 
 .description__photo {
-    display: grid;
-    grid-template-areas:
-     "img1 img1 img1";
+    display: flex;
+    gap: 59px;
+
 }
 
 .desc__img {
-    grid-area: img1;
+    display: flex;
+    max-width: 240px;
+}
+
+.reviews {
+    margin-bottom: 97px;
+}
+
+.reviews__title {
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 120%;
+    text-align: center;
+    color: #2B2B2B;
+    margin-bottom: 80px;
+}
+
+.reviews__blocks {
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+}
+
+.review {
+    max-width: 433px;
+    padding: 60px 14px 28px 60px;
+    border: 1px solid #transparent;
+    background: #EBEBEB;
+    box-shadow: 0px 0px 40px rgba(57, 40, 166, 0.15);
+    border-radius: 5px;
+}
+
+.rewiew_desc {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2B2B2B;
+    margin-bottom: 20px;
+}
+
+.username {
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2B2B2B;
+}
+
+.profile {
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 118px;
+    margin-bottom: 39px;
+}
+
+.footer_logo {
+    max-width: 81px;
+    height: 100%;
+}
+
+.footer__img {
+    width: 100%;
+}
+
+.footer_desc {
+    max-width: 180px;
+}
+
+.footer__title {
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer__link .footer__p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
 }
